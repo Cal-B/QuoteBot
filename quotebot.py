@@ -20,9 +20,6 @@ bot = commands.Bot(command_prefix=commands.when_mentioned,
 # Initialize our DB Helper object
 bot.dbh = DBHelper(cfg['db_file'])
 
-# # Set custom status
-# bot.customstatus = cfg['status']
-
 
 @bot.event
 async def on_ready():
